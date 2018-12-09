@@ -67,7 +67,8 @@ WSGI_APPLICATION = 'homepage.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 if os.environ["LOCATION"]=="PRODUCTION":
-
+    import pymysql
+    pymysql.install_as_MySQLdb()
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
