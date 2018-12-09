@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import "color.scss";
+
+.area--Blog{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.area-main--Blog{
+    width:90%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lnk-detail--Blog{
+    width:auto;
+    height:30rem;
+    display: inline-flex;
+    margin: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.img-card--Blog{
+    width:23rem;
+    height:23rem;
+    border-radius: 5px;
+}
+.ttl-card--Blog{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin:1rem 0;
+    font-size:1.5rem;
+    color:$blue;
+    
+}

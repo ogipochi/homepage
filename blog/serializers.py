@@ -11,27 +11,41 @@ class TagSerializer(serializers.ModelSerializer):
 
 class BlogListSerializer(serializers.ModelSerializer):
     tags = TagSerializer(source='get_tag_list',many=True)
+    main_image = serializers.URLField(source="get_main_image")
     class Meta:
         model = Blog
         fields = (
             'uuid',
-            'titile',
+            'title',
             'created',
             'edited',
             'is_active',
             'is_public',
-            'image',
             'tags',
+            'main_image',
         )
 class ParagraphSerializer(serializers.ModelSerializer):
     class Meta:
         model = Paragraph
         fields = (
             'uuid',
-            'blog',
             'image',
             'content',
             'order',
+            'is_code',
+            'programing_language',
+            'image',
+        )
+
+class SectionSerializer(serializers.ModelSerializer):
+    paragraphs = ParagraphSerializer(source="get_paragraph_list",many=True)
+    class Meta:
+        model = Section
+        fields = (
+            'uuid',
+            'title',
+            'order',
+            'paragraphs',
         )
 
 class ReplySerializer(serializers.ModelSerializer):
@@ -42,7 +56,7 @@ class ReplySerializer(serializers.ModelSerializer):
             'blog',
             'name',
             'message',
-            'to_commet',
+            'to_comment',
         )
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -54,23 +68,25 @@ class CommentSerializer(serializers.ModelSerializer):
             'blog',
             'name',
             'message',
-            'to_commet',
-            'reply_list'
+            'to_comment',
+            'reply_list',
+            'created',
+            'edited',
         )
 class BlogSerializer(serializers.ModelSerializer):
-    paragraphs = ParagraphSerializer(source="get_paragraph_list",many=True)
+    sections = SectionSerializer(source="get_section_list",many=True)
     comments = CommentSerializer(source="get_comment_list",many=True)
     class Meta:
         model = Blog
         fields = (
             'uuid',
-            'titile',
+            'title',
             'created',
             'edited',
             'is_active',
             'is_public',
-            'image',
-            'tags',
+            'sections',
+            'comments',
         )
 
 

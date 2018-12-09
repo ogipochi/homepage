@@ -11,11 +11,13 @@ class SentenceForVocabularySerializer(serializers.ModelSerializer):
         )
 
 class VocabularyListSerializer(serializers.ModelSerializer):
+    repetition = serializers.IntegerField(source="get_repetition")
     sentences = SentenceForVocabularySerializer(source="get_sentences",many=True)
     class Meta:
         model = Vocabulary
         fields = (
-            'content',
+            'content_eng',
+            'content_jp',
             'created',
             'edited',
             'repetition',
@@ -23,11 +25,13 @@ class VocabularyListSerializer(serializers.ModelSerializer):
         )
 
 class VocabularyForSentenceSerializer(serializers.ModelSerializer):
+    repetition = serializers.IntegerField(source="get_repetition")
     class Meta:
         model = Vocabulary
         fields = (
             'uuid',
-            'content',
+            'content_eng',
+            'content_jp',
             'repetition',
         )
 
@@ -37,7 +41,8 @@ class SentenceListSerializer(serializers.ModelSerializer):
         model = Sentence
         fields = (
             'uuid',
-            'content',
+            'content_eng',
+            'content_jp',
             'created',
             'edited',
             'created',
