@@ -45,5 +45,137 @@
   align-items: center;
   margin: 1rem 0;
   font-size: 1.5rem;
-  color: #448aff;
+  color: #40c4ff;
+}
+
+/* line 47, ../sass/blog.scss */
+.area-main--BlogDetail {
+  width: 60rem;
+}
+
+/* line 50, ../sass/blog.scss */
+.area-paragraph--BlogDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.15rem;
+  line-height: 1.4em;
+}
+
+/* line 57, ../sass/blog.scss */
+.area-image-paragraph--BlogDetail {
+  width: 100%;
+  height: 35vh;
+}
+/* line 60, ../sass/blog.scss */
+.area-image-paragraph--BlogDetail img {
+  height: 100%;
+  width: auto;
+}
+
+/* line 65, ../sass/blog.scss */
+.area-index--BlogDetail {
+  background-color: rgba(222, 222, 222, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* line 73, ../sass/blog.scss */
+.area-code--BlogDetail {
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.4em;
+}
+
+/* line 79, ../sass/blog.scss */
+.area-paragraph--BlogDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 86, ../sass/blog.scss */
+.area-content-paragraph--BlogDetail {
+  width: 100%;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* line 94, ../sass/blog.scss */
+.ttl3--BlogDetail {
+  font-size: 2.4rem;
+  line-height: 2em;
+  margin: 1rem 0 0 0;
+  font-weight: bold;
+}
+
+/* line 101, ../sass/blog.scss */
+.ttl4--BlogDetail {
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0;
+  text-align: initial;
+  font-weight: bold;
+}
+
+/* line 107, ../sass/blog.scss */
+.ttl-index--BlogDetail {
+  margin: 1rem 0 0.5rem 2rem;
+  color: rgba(155, 155, 155, 0.75);
+  font-size: 2rem;
+}
+
+/* line 112, ../sass/blog.scss */
+.timestamp--BlogDetail {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: rgba(100, 100, 100, 0.75);
+}
+/* line 120, ../sass/blog.scss */
+.timestamp--BlogDetail .created--BlogDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+  width: 11rem;
+}
+/* line 127, ../sass/blog.scss */
+.timestamp--BlogDetail .edited--BlogDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+  width: 11rem;
+}
+
+/* line 137, ../sass/blog.scss */
+.ul-index--BlogDetail {
+  width: 100%;
+  height: auto;
+  margin: 0.5rem 0 1rem 2rem;
+  line-height: 1.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* line 148, ../sass/blog.scss */
+.li-index--BlogDetail {
+  text-decoration: dotted;
+}
+
+/* line 151, ../sass/blog.scss */
+.lnk-index--BlogDetail {
+  color: #536dfe;
+  text-decoration: none;
 }

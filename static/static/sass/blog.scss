@@ -41,6 +41,114 @@
     align-items: center;
     margin:1rem 0;
     font-size:1.5rem;
-    color:$blue;
+    color:$light_blue;
     
+}
+.area-main--BlogDetail{
+    width:60rem;
+}
+.area-paragraph--BlogDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.15rem;
+    line-height: 1.4em;
+}
+.area-image-paragraph--BlogDetail{
+    width:100%;
+    height:35vh;
+    img{
+        height:100%;
+        width:auto;
+    }
+}
+.area-index--BlogDetail{
+    background-color: rgba(222,222,222,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.area-code--BlogDetail{
+    width:100%;
+    font-size:0.9rem;
+    line-height: 1.4em;
+}
+
+.area-paragraph--BlogDetail{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.area-content-paragraph--BlogDetail{
+    width:100%;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.ttl3--BlogDetail{
+    font-size:2.4rem;
+    
+    line-height: 2em;
+    margin: 1rem 0 0 0;
+    font-weight: bold;
+}
+.ttl4--BlogDetail{
+    font-size:2rem;
+    margin:1rem 0 2rem 0; 
+    text-align: initial;
+    font-weight: bold;
+}
+.ttl-index--BlogDetail{
+    margin:1rem 0 0.5rem 2rem;
+    color:rgba(155,155,155,0.75);
+    font-size: 2rem;
+}
+.timestamp--BlogDetail{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color:$font_gray;
+    
+    .created--BlogDetail{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin:0.3rem 0;
+        width:11rem;
+    }
+    .edited--BlogDetail{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin:0.3rem 0;
+        width:11rem;
+    }
+}
+
+
+.ul-index--BlogDetail{
+    width:100%;
+    height:auto;
+    margin:0.5rem 0 1rem 2rem;
+    line-height: 1.6em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+.li-index--BlogDetail{
+    text-decoration: dotted;
+}
+.lnk-index--BlogDetail{
+    color:$indigo;
+    text-decoration: none;
 }
