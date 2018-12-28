@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import "compass";
+@import "color.scss";
+
+html{
+    color:$font_black;
+}
+pre{
+    text-align: initial;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: #263238;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: #263238;
+    color:$font_white;
+    padding:1rem 0 0 0;
+    .copyright--Footer{
+        height:2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .email--Footer{
+        height:2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+.nav--Header{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Capriola', sans-serif;
+        
+        a{
+            padding:1.5em;
+            width:100%;
+            height:100%;
+        
+        &:hover{
+            @include text-shadow(0 0 3px rgba(255,255,255,0.85),0 0 6px rgba(255,255,255,0.55));
+        }
+        }
+        
+    
+    
+}
+a{
+    color:rgba(255,255,255,0.9);
+}
