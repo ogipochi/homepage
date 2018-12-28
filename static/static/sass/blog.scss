@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.area-main--Blog{
+.area-main--BlogList{
     width:90%;
     height:auto;
     display: flex;
@@ -18,7 +18,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.lnk-detail--Blog{
+.lnk-detail--BlogList{
     width:auto;
     height:30rem;
     display: inline-flex;
@@ -28,12 +28,12 @@
     align-items: center;
     
 }
-.img-card--Blog{
+.img-card--BlogList{
     width:23rem;
     height:23rem;
     border-radius: 5px;
 }
-.ttl-card--Blog{
+.ttl-card--BlogList{
     width:100%;
     display: flex;
     flex-direction: row;
@@ -43,6 +43,39 @@
     font-size:1.5rem;
     color:$light_blue;
     
+}
+.sub-card--BlogList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:23rem;
+    
+}
+.created-card--BlogList{
+    color:$font_gray;
+    margin:0 1rem 0 0;
+}
+.area-taglist--BlogList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin:0 0 0 1rem;
+    align-items: center;
+}
+.tag-card--BlogList{
+    color:$font_gray;
+    background-color: rgb(233,233,233);
+    margin: 0.3rem 0.2rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+.icon-tag--BlogList{
+    width:1.2rem;
+    height:1.2rem;
+    opacity:0.4;
 }
 .area-main--BlogDetail{
     width:60rem;
@@ -54,6 +87,7 @@
     font-size: 1.15rem;
     line-height: 1.4em;
 }
+
 .area-image-paragraph--BlogDetail{
     width:100%;
     height:35vh;
